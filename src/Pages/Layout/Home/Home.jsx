@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import HomeBanner from "./HomeBanner";
 
 const StyledHome = styled.section``;
 
 function Home() {
-  return <StyledHome>Home</StyledHome>;
+  return (
+    <StyledHome>
+      <HomeBanner />
+    </StyledHome>
+  );
 }
 
 export default Home;

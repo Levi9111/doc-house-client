@@ -9,26 +9,26 @@ import SignUp from "../Pages/Layout/SignUp/SignUp";
 export const router = createBrowserRouter([
   {
     path: "/",
-    Element: <Main />,
+    element: <Main />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <About />,
       },
       {
-        path: "/appointment",
+        path: "appointment",
         element: <Appointment />,
       },
       {
-        path: "/login",
+        path: "login",
         element: <Login />,
       },
       {
-        path: "/signup",
+        path: "signup",
         element: <SignUp />,
       },
     ],

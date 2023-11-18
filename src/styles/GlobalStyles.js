@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
 :root{
     --font-icon: 3.5rem;
-    --font-primary: 7.5rem;
+    --font-primary: 6.5rem;
     --font-secondary: 1.8rem;
     --font-tertiary: 1.6rem;
 
@@ -46,12 +46,12 @@ body {
 
 
 @media (max-width: 768px) {
-    :root {
-        --font-primary: 3rem;
-        --font-tertiary: 1.4rem;
-        --banner-font: 1.4rem;
-        --primary-header-font: 4rem;
-
-    }
+  :root {
+    --font-primary: 3rem;
+    --font-tertiary: 1.4rem;
+    --banner-font: 1.4rem;
+    --primary-header-font: 4rem;
+  }
 }
+
 `;
