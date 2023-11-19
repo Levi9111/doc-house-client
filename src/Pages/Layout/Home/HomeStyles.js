@@ -18,7 +18,7 @@ const StyledHomeBanner = styled.div`
   `}
 `;
 const Banner = styled.div`
-  width: 85%;
+  width: var(--controlled-width);
   margin: auto;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -123,3 +123,123 @@ export {
   Ellipse,
   Rectangle,
 };
+
+// Home Services
+
+const StyledHomeServices = styled.div`
+  padding: var(--controlled-padding);
+  padding-top: 13rem;
+  ${mediaQuery`
+    padding-top: 3.2rem;
+  `}
+`;
+const ServiesContainer = styled.div`
+  width: var(--controlled-width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2.4rem;
+  grid-row-gap: 3.2rem;
+  ${mediaQuery`
+  grid-template-columns: 1fr ;
+  `}
+`;
+const BannerImage = styled.img`
+  width: 100%;
+`;
+const ServiceDescriptor = styled.div`
+  h2 {
+    font-size: var(--primary-header-font);
+    color: var(--text-dark);
+  }
+  p {
+    font-size: var(--font-tertiary);
+    color: var(--text-secondary-dark);
+    font-weight: 400;
+    margin: 2rem 0 3rem 0;
+  }
+`;
+
+const ReactTabs = styled.aside`
+  .react_tabs {
+    padding: 0;
+  }
+  .react-tabs__tab-list {
+    margin: 0;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--text-secondary-dark);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .react-tabs__tab {
+    border: none;
+    width: 100%;
+    padding: 2.7rem 1.6rem;
+  }
+
+  .react-tabs__tab--selected {
+    background-color: var(--bg-button);
+    height: 100%;
+    border-radius: var(--border-radius);
+  }
+
+  .react-tabs__tab-panel {
+    margin-top: 5rem;
+
+    img {
+      width: 100%;
+    }
+  }
+`;
+
+export {
+  StyledHomeServices,
+  ServiesContainer,
+  BannerImage,
+  ServiceDescriptor,
+  ReactTabs,
+};
+
+// Home Address Cards
+
+const StyledHomeAddressCards = styled.div`
+  padding: var(--controlled-padding);
+  width: var(--controlled-width);
+  margin: auto;
+`;
+const AddressCards = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2.4rem;
+  grid-row-gap: 1.6rem;
+  ${mediaQuery`
+  grid-template-columns: 1fr;
+  `}
+`;
+const Card = styled.div`
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 2rem;
+  padding: 4rem 1.4rem 4rem 4rem;
+  border-radius: var(--border-radius);
+  color: var(--text-white);
+  background-color: ${(props) => props.bgColor};
+
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: var(--font-button);
+  }
+
+  img {
+    width: 5rem;
+  }
+`;
+
+export { AddressCards, StyledHomeAddressCards, Card };

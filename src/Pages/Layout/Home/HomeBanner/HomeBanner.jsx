@@ -1,12 +1,12 @@
-import Button from "../../../Components/Button";
-import img1 from "../../../assets/images/img-home-1.png";
-import img2 from "../../../assets/images/img-home-2.png";
-import img3 from "../../../assets/images/img-home-3.png";
+import Button from "../../../../Components/Button";
+import img1 from "../../../../assets/images/img-home-1.png";
+import img2 from "../../../../assets/images/img-home-2.png";
+import img3 from "../../../../assets/images/img-home-3.png";
 
-import capsule1 from "../../../assets/icons/capsule-1.svg";
-import capsule2 from "../../../assets/icons/capsule-2.svg";
-import ellipse from "../../../assets/icons/ellipse.svg";
-import rectangle from "../../../assets/icons/rectangle.svg";
+import capsule1 from "../../../../assets/icons/capsule-1.svg";
+import capsule2 from "../../../../assets/icons/capsule-2.svg";
+import ellipse from "../../../../assets/icons/ellipse.svg";
+import rectangle from "../../../../assets/icons/rectangle.svg";
 
 import {
   StyledHomeBanner,
@@ -17,7 +17,7 @@ import {
   Capsule2,
   Ellipse,
   Rectangle,
-} from "./HomeStyles";
+} from "../HomeStyles";
 
 function HomeBanner() {
   return (

@@ -1,10 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
-import Home from "../Pages/Layout/Home/Home";
+import Home from "../Pages/Layout/Home/Home/Home";
 import About from "../Pages/Layout/About/About";
 import Appointment from "../Pages/Layout/Appointment/Appointment";
 import Login from "../Pages/Layout/LogIn/Login";
 import SignUp from "../Pages/Layout/SignUp/SignUp";
+import ElectroGastrologyTherapy from "../Pages/Layout/Home/TabsPages/ElectroGastrologyTherapy/ElectroGastrologyTherapy";
+import CosmeticDentistry from "../Pages/Layout/Home/TabsPages/CosmeticDentistry/CosmeticDentistry";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +32,14 @@ export const router = createBrowserRouter([
       {
         path: "signup",
         element: <SignUp />,
+      },
+      {
+        path: "electro-gastrology-therapy",
+        element: <ElectroGastrologyTherapy />,
+      },
+      {
+        path: "cosmetic-dentistry",
+        element: <CosmeticDentistry />,
       },
     ],
   },
