@@ -1,0 +1,26 @@
+[
+  {
+    "img": "https://i.ibb.co/gFPNbJ8/review-1.png",
+    "name": "John Doe",
+    "profession": "Software Engineer",
+    "review": "I had a great experience at the medical clinic. The staff was friendly and professional. The doctors took the time to listen to my concerns, and the treatment was effective. I highly recommend this clinic."
+  },
+  {
+    "img": "https://i.ibb.co/r7w42YK/review-2.png",
+    "name": "Jane Smith",
+    "profession": "Teacher",
+    "review": "Excellent service! The clinic is clean and well-maintained. The medical team is knowledgeable and caring. I felt comfortable throughout my visit. Thank you for the exceptional care."
+  },
+  {
+    "img": "https://i.ibb.co/ftNSfWP/review-4.png",
+    "name": "Mike Johnson",
+    "profession": "Accountant",
+    "review": "I'm impressed with the professionalism of the clinic. The doctors explained the diagnosis and treatment options clearly. The support staff was courteous, making my overall experience positive."
+  },
+  {
+    "img": "https://i.ibb.co/56HSMYm/review-3.png",
+    "name": "Emily Davis",
+    "profession": "Graphic Designer",
+    "review": "The medical clinic exceeded my expectations. The facilities are modern, and the staff is committed to patient care. I felt well-informed and cared for throughout my visit. I would recommend this clinic to others."
+  }
+]
