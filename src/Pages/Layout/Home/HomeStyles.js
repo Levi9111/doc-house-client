@@ -321,3 +321,67 @@ const Review = styled.div`
   }
 `;
 export { StyledHomeReviews, ReviewsContainer, Reviews, Review };
+
+// Home Styles
+
+const StyledHomeDoctors = styled.div`
+  width: var(--controlled-width);
+  padding: var(--controlled-padding);
+  margin: auto;
+`;
+const DoctorsTitle = styled.div`
+  text-align: center;
+  margin-bottom: 5rem;
+  h2 {
+    font-size: var(--primary-header-font);
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: var(--font-base);
+    color: var(--text-dark-secondary);
+  }
+`;
+const Doctors = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+
+  ${mediaQuery`
+  grid-template-columns:1fr;
+  `}
+`;
+const Doctor = styled.div`
+  padding: 2rem;
+  border: 1px solid var(--text-gray-primary);
+  border-radius: var(--border-radius);
+  span {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: var(--font-button);
+  }
+
+  p {
+    color: var(--text-gray-primary);
+    font-weight: 300;
+  }
+  aside {
+    .react-stars {
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+`;
+
+export { StyledHomeDoctors, DoctorsTitle, Doctors, Doctor };

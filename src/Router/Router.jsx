@@ -45,6 +45,8 @@ export const router = createBrowserRouter([
       {
         path: "/:id",
         element: <DoctorProfile />,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/doctors/${params.id}`),
       },
     ],
   },
