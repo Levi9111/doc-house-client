@@ -21,6 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     --text-secodary-white: #FFF;
     --text-dark: #0A0808;
     --text-secondary-dark: #3B3A3A;
+    --text-gray-primary: #6C6B6B;
 
     --bg-button: #F7A582;
 

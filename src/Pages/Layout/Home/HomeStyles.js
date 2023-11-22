@@ -243,3 +243,81 @@ const Card = styled.div`
 `;
 
 export { AddressCards, StyledHomeAddressCards, Card };
+
+// Home Reviews
+const StyledHomeReviews = styled.div``;
+const ReviewsContainer = styled.div`
+  width: var(--controlled-width);
+  margin: auto;
+  text-align: center;
+  padding: var(--controlled-padding);
+  h3 {
+    font-size: var(--primary-header-font);
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: var(--font-tertiary);
+    color: var(--text-secondary-dark);
+  }
+`;
+const Reviews = styled.div`
+  margin-top: 2rem;
+  .react-multiple-carousel__arrow--left {
+    left: 0;
+  }
+  .react-multiple-carousel__arrow--right {
+    right: 0;
+  }
+  .react-multiple-carousel__arrow {
+    background-color: var(--bg-button);
+  }
+  div {
+    span {
+      img {
+        width: 6.5rem;
+        height: 6.5rem;
+        border-radius: 100%;
+      }
+
+      div {
+      }
+    }
+  }
+`;
+
+const Review = styled.div`
+  padding: 2rem;
+  aside {
+    border: 0.5px solid var(--text-secondary-dark);
+    border-radius: 2rem;
+    min-height: 35rem;
+    padding: 5.7rem 4.4rem 4rem 5rem;
+    text-align: start;
+  }
+  span {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+
+    div {
+      flex-grow: 1;
+      p {
+        &:first-child {
+          font-size: var(--font-button);
+        }
+        &:nth-child(2) {
+          color: var(--text-gray-primary);
+        }
+      }
+    }
+  }
+  p {
+    &:last-child {
+      font-size: var(--banner-font);
+      color: var(--text-gray-primary);
+    }
+  }
+`;
+export { StyledHomeReviews, ReviewsContainer, Reviews, Review };
