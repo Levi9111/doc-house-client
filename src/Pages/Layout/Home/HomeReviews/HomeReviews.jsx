@@ -9,16 +9,7 @@ import {
 import Spinner from "../../../../Components/Spinner";
 import Carousel from "./CarouselContainer";
 import Quote from "../../../../assets/icons/quote";
-
-const fetchReviews = async () => {
-  try {
-    const response = await fetch("http://localhost:3000/reviews");
-    const data = await response.json();
-    return data;
-  } catch (err) {
-    throw new Error("Error fetching reviews");
-  }
-};
+import { fetchReviews } from "../../../../FetchData/fetchData";
 
 function HomeReviews() {
   const {
@@ -29,10 +20,11 @@ function HomeReviews() {
     queryKey: ["reviews"],
     queryFn: fetchReviews,
   });
-  console.log(reviews);
+
   if (isLoading) return <Spinner />;
   if (error)
     return <StyledHomeReviews> Error Fetching reviews</StyledHomeReviews>;
+
   return (
     <StyledHomeReviews>
       <ReviewsContainer>

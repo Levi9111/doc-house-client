@@ -1,0 +1,128 @@
+[
+  {
+    "photo": "https://i.ibb.co/ZGVqWRn/Rectangle-15.png",
+    "name": "Dr. John Smith, MD",
+    "credentials": "MD, FACP",
+    "specialization": "Internal Medicine",
+    "experience": "20 years",
+    "education": [
+      {
+        "degree": "Doctor of Medicine (MD)",
+        "school": "Medical College",
+        "year": "1995"
+      },
+      {
+        "degree": "Internal Medicine Residency",
+        "school": "City Hospital",
+        "year": "2000"
+      }
+    ],
+    "boardCertification": true,
+    "areasOfInterest": ["Preventive Medicine", "Chronic Disease Management"],
+    "hospitalAffiliations": ["City Hospital", "Community Medical Center"],
+    "languagesSpoken": ["English"],
+    "professionalMemberships": ["American College of Physicians"],
+    "contactInformation": {
+      "phone": "555-1234",
+      "email": "dr.john@example.com",
+      "officeAddress": "456 Oak St, Suite 201, Townsville, USA"
+    },
+    "officeHours": "Monday to Friday: 8:00 AM - 6:00 PM",
+    "insuranceAccepted": ["Medicare", "UnitedHealthcare", "Humana"],
+    "publications": [
+      {
+        "title": "Advancements in Internal Medicine",
+        "journal": "Medical Journal",
+        "year": "2015"
+      }
+    ],
+    "appointmentScheduling": "Book appointments online or call the office.",
+    "telemedicineAvailability": true,
+    "rattings": "4.5",
+    "visit": "18"
+  },
+  {
+    "photo": "https://i.ibb.co/bgzYhXK/Rectangle-15-1.png",
+    "name": "Dr. Sarah Johnson, DDS",
+    "credentials": "DDS, MS",
+    "specialization": "Orthodontics",
+    "experience": "18 years",
+    "education": [
+      {
+        "degree": "Doctor of Dental Surgery (DDS)",
+        "school": "Dental College",
+        "year": "2003"
+      },
+      {
+        "degree": "Orthodontics Residency",
+        "school": "Ortho Institute",
+        "year": "2006"
+      }
+    ],
+    "boardCertification": true,
+    "areasOfInterest": ["Orthodontic Treatment", "Invisalign"],
+    "hospitalAffiliations": ["Dental Center", "Ortho Clinic"],
+    "languagesSpoken": ["English", "Spanish"],
+    "professionalMemberships": ["American Association of Orthodontists"],
+    "contactInformation": {
+      "phone": "555-5678",
+      "email": "dr.sarah@example.com",
+      "officeAddress": "789 Elm St, Suite 301, Cityburg, USA"
+    },
+    "officeHours": "Monday to Thursday: 9:00 AM - 5:00 PM",
+    "insuranceAccepted": ["Delta Dental", "Cigna Dental", "MetLife"],
+    "publications": [
+      {
+        "title": "Innovations in Orthodontic Care",
+        "journal": "Orthodontics Today",
+        "year": "2010"
+      }
+    ],
+    "appointmentScheduling": "Book appointments online or call the office.",
+    "telemedicineAvailability": false,
+    "rattings": "4.2",
+    "visit": "20"
+  },
+  {
+    "photo": "https://i.ibb.co/Tv5bDpb/Rectangle-15-2.png.png",
+    "name": "Dr. Michael Brown, DPM",
+    "credentials": "DPM, FACFAS",
+    "specialization": "Podiatry",
+    "experience": "15 years",
+    "education": [
+      {
+        "degree": "Doctor of Podiatric Medicine (DPM)",
+        "school": "Podiatry University",
+        "year": "2005"
+      },
+      {
+        "degree": "Podiatric Surgery Residency",
+        "school": "Foot Clinic",
+        "year": "2010"
+      }
+    ],
+    "boardCertification": true,
+    "areasOfInterest": ["Foot and Ankle Surgery", "Sports Medicine"],
+    "hospitalAffiliations": ["City Podiatry Center", "Foot Hospital"],
+    "languagesSpoken": ["English"],
+    "professionalMemberships": ["American Podiatric Medical Association"],
+    "contactInformation": {
+      "phone": "555-9876",
+      "email": "dr.michael@example.com",
+      "officeAddress": "123 Maple St, Suite 102, Villagetown, USA"
+    },
+    "officeHours": "Tuesday and Thursday: 10:00 AM - 7:00 PM",
+    "insuranceAccepted": ["Aetna", "Blue Cross Blue Shield", "Medicaid"],
+    "publications": [
+      {
+        "title": "Advancements in Podiatric Surgery",
+        "journal": "Podiatry Journal",
+        "year": "2018"
+      }
+    ],
+    "appointmentScheduling": "Book appointments online or call the office.",
+    "telemedicineAvailability": false,
+    "rattings": "4.7",
+    "visit": "15"
+  }
+]
