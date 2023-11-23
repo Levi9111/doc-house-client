@@ -18,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
 
     --bg-primary: #07332F;
     --text-white: #F3F3F3;
+    --text-white-opac: rgba(255, 255, 255,.3);
     --text-secodary-white: #FFF;
     --text-dark: #0A0808;
     --text-secondary-dark: #3B3A3A;
@@ -45,7 +46,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   min-height: 100vh;
   line-height: 1.5;
   font-size: 1.6rem;

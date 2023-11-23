@@ -4,6 +4,7 @@ import HomeServices from "../HomeServices/HomeServices";
 import HomeAddressCards from "../HomeAddressCards/HomeAddressCards";
 import HomeReviews from "../HomeReviews/HomeReviews";
 import HomeDoctors from "../HomeDoctors/HomeDoctors";
+import HomeContact from "../HomeContact/HomeContact";
 
 const StyledHome = styled.section``;
 
@@ -15,6 +16,7 @@ function Home() {
       <HomeAddressCards />
       <HomeReviews />
       <HomeDoctors />
+      <HomeContact />
     </StyledHome>
   );
 }
