@@ -24,8 +24,6 @@ function HomeDoctors() {
     queryFn: fetchDoctors,
   });
 
-  console.log(doctors);
-
   if (isLoading) return <Spinner />;
   if (error) return <StyledHomeDoctors>{error}</StyledHomeDoctors>;
   return (
@@ -77,7 +75,7 @@ function DoctorInfo({ doctor }) {
         <p>${doctor.visit}</p>
       </span>
       <Link to={`/${doctor._id}`}>
-        <BtnOutlined>View profile</BtnOutlined>
+        <BtnOutlined type="wide">View profile</BtnOutlined>
       </Link>
     </Doctor>
   );

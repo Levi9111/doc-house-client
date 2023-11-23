@@ -2,100 +2,14 @@ import styled from "styled-components";
 import { Controller, useForm } from "react-hook-form";
 import LocationIcon from "../../../../assets/icons/LocationIcon";
 import PhoneIcon from "../../../../assets/icons/PhoneIcon";
-import calender from "../../../../assets/icons/calender.svg";
 
-const StyledHomeContact = styled.div`
-  padding: var(--controlled-padding);
-`;
-const HomeContactContainer = styled.div`
-  width: var(--controlled-width);
-  padding: 12rem 10rem;
-  margin: auto;
-  background: var(--bg-primary);
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-gap: 2.4rem;
-  color: var(--text-white);
-`;
-const ContactText = styled.div`
-  h3 {
-    font-size: var(--primary-header-font);
-    margin-bottom: 2rem;
-  }
+import {
+  StyledHomeContact,
+  HomeContactContainer,
+  ContactText,
+  StyledForm,
+} from "../HomeStyles";
 
-  p {
-    font-weight: 300;
-  }
-
-  span {
-    margin-top: 3.2rem;
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-gap: 2rem;
-  }
-`;
-const StyledForm = styled.aside`
-  form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2.4rem;
-  }
-
-  aside {
-    background: var(--text-white-opac);
-    border-radius: var(--border-radius);
-    color: var(--text-white);
-  }
-  input,
-  select,
-  option {
-    width: calc(100% - 2rem);
-    background-color: transparent;
-    border-radius: var(--border-radius);
-    color: var(--text-white);
-  }
-
-  input,
-  select,
-  option {
-    border: 0;
-    padding: 2rem;
-    outline: none;
-
-    &::placeholder {
-      color: var(--text-secodary-white);
-      font-size: var(--font-base);
-      font-weight: 400;
-      line-height: 2.6rem;
-    }
-  }
-
-  option {
-    color: var(--text-gray-primary);
-  }
-
-  input[type="date"] {
-    &::-webkit-calendar-picker-indicator {
-      background-image: url(${calender});
-      background-position: center;
-      background-size: 20px 20px;
-      background-repeat: no-repeat;
-      color: rgba(204, 204, 204, 0);
-    }
-  }
-
-  button {
-    grid-column: 1/-1;
-    padding: 1.8rem;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    border: 0;
-    background-color: var(--bg-button);
-    font-size: var(--font-button);
-    font-weight: 700;
-    color: var(--text-white);
-  }
-`;
 const Name = styled.aside``;
 const Email = styled.aside``;
 const Number = styled.aside``;

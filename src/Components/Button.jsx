@@ -18,7 +18,7 @@ const StyledOutlinedButton = styled.button`
   padding: 1.4rem 2.3rem;
   background-color: transparent;
   cursor: pointer;
-  width: 100%;
+  width: ${(props) => (props.type === "wide" ? "100%" : "auto")};
   &:hover {
     background-color: var(--bg-button);
     color: var(--text-secodary-white);
@@ -29,8 +29,8 @@ function Button({ children }) {
   return <StyledButton>{children}</StyledButton>;
 }
 
-export function BtnOutlined({ children }) {
-  return <StyledOutlinedButton>{children}</StyledOutlinedButton>;
+export function BtnOutlined({ children, type }) {
+  return <StyledOutlinedButton type={type}>{children}</StyledOutlinedButton>;
 }
 
 export default Button;
