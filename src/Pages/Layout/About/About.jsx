@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyledAbout = styled.section``;
 
 function About() {
-  return <StyledAbout>About</StyledAbout>;
+  return <StyledAbout>About section</StyledAbout>;
 }
 
 export default About;

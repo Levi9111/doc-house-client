@@ -4,7 +4,6 @@
     "name": "Dr. John Smith, MD",
     "credentials": "MD, FACP",
     "specialization": "Internal Medicine",
-    "experience": "20 years",
     "education": [
       {
         "degree": "Doctor of Medicine (MD)",
@@ -17,11 +16,51 @@
         "year": "2000"
       }
     ],
+    "experience": [
+      {
+        "institute": "City Hospital",
+        "role": "Internal Medicine Specialist",
+        "workingYear": "2000 - Present"
+      },
+      {
+        "institute": "Community Medical Center",
+        "role": "Attending Physician",
+        "workingYear": "2005 - 2010"
+      },
+      {
+        "institute": "Metropolitan General Hospital",
+        "role": "Chief of Internal Medicine",
+        "workingYear": "2010 - 2015"
+      },
+      {
+        "institute": "University Medical Center",
+        "role": "Clinical Professor of Internal Medicine",
+        "workingYear": "2015 - Present"
+      },
+      {
+        "institute": "State Cardiology Institute",
+        "role": "Consultant Cardiologist",
+        "workingYear": "2002 - 2005"
+      }
+    ],
     "boardCertification": true,
     "areasOfInterest": ["Preventive Medicine", "Chronic Disease Management"],
     "hospitalAffiliations": ["City Hospital", "Community Medical Center"],
     "languagesSpoken": ["English"],
     "professionalMemberships": ["American College of Physicians"],
+    "services": [
+      "Comprehensive Health Exams",
+      "Chronic Disease Management",
+      "Preventive Care",
+      "Cardiovascular Health",
+      "Geriatric Care"
+    ],
+    "specializations": [
+      "Internal Medicine",
+      "Cardiology",
+      "Geriatrics",
+      "Preventive Medicine"
+    ],
     "contactInformation": {
       "phone": "555-1234",
       "email": "dr.john@example.com",
@@ -39,14 +78,96 @@
     "appointmentScheduling": "Book appointments online or call the office.",
     "telemedicineAvailability": true,
     "rattings": "4.5",
-    "visit": "18"
+    "visit": "18",
+    "aboutMe": "I am a dedicated and experienced Internal Medicine specialist with a focus on preventive medicine and chronic disease management. Throughout my 20-year career, I have been committed to providing quality healthcare services to my patients. I am passionate about staying updated with advancements in the field and contributing to medical literature through publications. Feel free to reach out to schedule an appointment or for any health-related inquiries.",
+    "reviews": [
+      {
+        "name": "Mary Johnson",
+        "profession": "Teacher",
+        "image": "https://i.ibb.co/fDC4JGB/mohammad-faruque-Sp-IKPT8ze-As-unsplash.jpg",
+        "review": "Dr. John Smith is an excellent physician. He provided me with thorough and compassionate care. Highly recommended!",
+        "rating": 5,
+        "date": "2023-01-15"
+      },
+      {
+        "name": "Robert White",
+        "profession": "Engineer",
+        "image": "https://i.ibb.co/pZMkx90/oliver-ragfelt-kh-V4f-Ty6-D8-unsplash.jpg",
+        "review": "I've been a patient of Dr. Smith for several years. He is knowledgeable, patient, and always takes the time to explain things. A top-notch doctor!",
+        "rating": 4.5,
+        "date": "2023-02-05"
+      },
+      {
+        "name": "Emily Davis",
+        "profession": "Graphic Designer",
+        "image": "https://i.ibb.co/mCDspFS/tamara-bellis-Mn1-Uopx7if8-unsplash.jpg",
+        "review": "Dr. John Smith is friendly, and his staff is welcoming. The office atmosphere is calming. Great experience overall!",
+        "rating": 4,
+        "date": "2023-03-20"
+      },
+      {
+        "name": "Richard Brown",
+        "profession": "Writer",
+        "image": "https://i.ibb.co/MGvSpL7/barnabas-lartey-odoi-tetteh-86a-PBb68os-unsplash.jpg",
+        "review": "I appreciate Dr. Smith's holistic approach to healthcare. He listens attentively and provides personalized recommendations.",
+        "rating": 5,
+        "date": "2023-04-10"
+      },
+      {
+        "name": "Alice Thompson",
+        "profession": "Nurse",
+        "image": "https://i.ibb.co/sVSpcmC/charles-etoroma-95-UF6-LXe-Lo-unsplash.jpg",
+        "review": "As a healthcare professional myself, I trust Dr. Smith's expertise. He is thorough and genuinely cares about his patients.",
+        "rating": 4.8,
+        "date": "2023-05-02"
+      },
+      {
+        "name": "John Miller",
+        "profession": "IT Specialist",
+        "image": "https://i.ibb.co/g7M34rF/ian-dooley-d1-UPki-Fd04-A-unsplash.jpg",
+        "review": "Dr. Smith's knowledge and attention to detail set him apart. The office is well-managed, and the staff is courteous.",
+        "rating": 4.3,
+        "date": "2023-06-15"
+      },
+      {
+        "name": "Catherine Lewis",
+        "profession": "Dietitian",
+        "image": "https://i.ibb.co/sbxHsBB/edward-cisneros-H6wpor9mjs-unsplash.jpg",
+        "review": "I appreciate Dr. Smith's emphasis on preventive care. He provided valuable insights to maintain a healthy lifestyle.",
+        "rating": 4.7,
+        "date": "2023-07-08"
+      },
+      {
+        "name": "Samuel Clark",
+        "profession": "Police Officer",
+        "image": "https://i.ibb.co/mRNVX6H/joseph-gonzalez-i-Fg-Rcq-Hznqg-unsplash.jpg",
+        "review": "Dr. Smith's commitment to community health is commendable. He actively participates in local health initiatives.",
+        "rating": 4.6,
+        "date": "2023-08-20"
+      },
+      {
+        "name": "Helen Turner",
+        "profession": "Librarian",
+        "image": "https://i.ibb.co/3kBJbPt/prince-akachi-i2ho-D-C2-RUA-unsplash.jpg",
+        "review": "Dr. Smith is a trustworthy and reliable healthcare provider. The office is organized, and appointments are efficient.",
+        "rating": 4.5,
+        "date": "2023-09-12"
+      },
+      {
+        "name": "Daniel Wright",
+        "profession": "Architect",
+        "image": "https://i.ibb.co/tXPBH5d/albert-dera-ILip77-Sbm-OE-unsplash.jpg",
+        "review": "I've been under Dr. Smith's care for chronic conditions. His treatment plans have significantly improved my quality of life.",
+        "rating": 4.9,
+        "date": "2023-10-05"
+      }
+    ]
   },
   {
     "photo": "https://i.ibb.co/bgzYhXK/Rectangle-15-1.png",
     "name": "Dr. Sarah Johnson, DDS",
     "credentials": "DDS, MS",
     "specialization": "Orthodontics",
-    "experience": "18 years",
     "education": [
       {
         "degree": "Doctor of Dental Surgery (DDS)",
@@ -59,6 +180,36 @@
         "year": "2006"
       }
     ],
+    "experience": [
+      {
+        "institute": "Dental Center",
+        "role": "Orthodontist",
+        "workingYear": "2006 - 2012"
+      },
+      {
+        "institute": "Ortho Clinic",
+        "role": "Senior Orthodontist",
+        "workingYear": "2012 - Present"
+      },
+      {
+        "institute": "City Dental Group",
+        "role": "Consultant Orthodontist",
+        "workingYear": "2003 - 2006"
+      },
+      {
+        "institute": "SmileCare Clinic",
+        "role": "Director of Orthodontics",
+        "workingYear": "2015 - Present"
+      }
+    ],
+    "services": [
+      "Orthodontic Treatment",
+      "Invisalign",
+      "Braces",
+      "Clear Aligners",
+      "Retainers"
+    ],
+    "specializations": ["Braces", "Clear Aligners", "Retainers"],
     "boardCertification": true,
     "areasOfInterest": ["Orthodontic Treatment", "Invisalign"],
     "hospitalAffiliations": ["Dental Center", "Ortho Clinic"],
@@ -81,14 +232,176 @@
     "appointmentScheduling": "Book appointments online or call the office.",
     "telemedicineAvailability": false,
     "rattings": "4.2",
-    "visit": "20"
+    "visit": "20",
+    "aboutMe": "I am a highly experienced orthodontist with 18 years of dedicated practice. My passion lies in providing top-notch orthodontic care, with a focus on innovation and patient comfort. Over the years, I have contributed to the field through publications and by serving in various roles, including Senior Orthodontist and Director of Orthodontics. I am committed to creating beautiful smiles and enhancing the oral health of my patients.",
+    "reviews": [
+      {
+        "name": "Grace Miller",
+        "profession": "Teacher",
+        "image": "https://i.ibb.co/RQ2dPd3/christopher-campbell-r-DEOVt-E7v-Os-unsplash.jpg",
+        "review": "Dr. Sarah Johnson is an exceptional orthodontist. She transformed my smile with precision and care. I'm delighted with the results!",
+        "rating": 4.5,
+        "date": "2023-01-10"
+      },
+      {
+        "name": "Andrew Turner",
+        "profession": "IT Consultant",
+        "image": "https://i.ibb.co/gwB9x2y/jurica-koletic-7-YVZYZe-ITc8-unsplash.jpg",
+        "review": "I had a positive experience with Dr. Johnson. Her expertise in orthodontics is evident, and the staff is friendly and efficient.",
+        "rating": 4.0,
+        "date": "2023-02-20"
+      },
+      {
+        "name": "Linda Harris",
+        "profession": "Marketing Specialist",
+        "image": "https://i.ibb.co/61gQh9y/jassir-jonis-h-SKBle-Rfj5-A-unsplash.jpg",
+        "review": "Dr. Sarah Johnson provided personalized orthodontic care tailored to my needs. I highly recommend her services.",
+        "rating": 4.8,
+        "date": "2023-03-15"
+      },
+      {
+        "name": "Timothy White",
+        "profession": "Architect",
+        "image": "https://i.ibb.co/1Lzt3q4/nonsap-visuals-k-MJp7620-W6-U-unsplash.jpg",
+        "review": "I appreciated Dr. Johnson's attention to detail and commitment to patient satisfaction. The results exceeded my expectations.",
+        "rating": 4.5,
+        "date": "2023-04-05"
+      },
+      {
+        "name": "Sophia Clark",
+        "profession": "Graphic Designer",
+        "image": "https://i.ibb.co/kh9fnz6/christina-wocintechchat-com-SJv-Dxw0azqw-unsplash.jpg",
+        "review": "Dr. Johnson and her team made the orthodontic process seamless. The office is modern, and appointments are convenient.",
+        "rating": 4.2,
+        "date": "2023-05-25"
+      },
+      {
+        "name": "Benjamin Turner",
+        "profession": "Accountant",
+        "image": "https://i.ibb.co/7Y3nknM/sergio-de-paula-c-Gmwf-HBDzk-unsplash-1.jpg",
+        "review": "I'm satisfied with the orthodontic treatment received from Dr. Johnson. The results are impressive, and the staff is professional.",
+        "rating": 4.6,
+        "date": "2023-06-10"
+      },
+      {
+        "name": "Evelyn Martin",
+        "profession": "Nurse",
+        "image": "https://i.ibb.co/GpMjMn9/zahir-namane-hwc7e-IQi-TCE-unsplash.jpg",
+        "review": "Dr. Sarah Johnson is an empathetic and skilled orthodontist. The office environment is welcoming, and the results speak for themselves.",
+        "rating": 4.7,
+        "date": "2023-07-12"
+      },
+      {
+        "name": "Oliver Turner",
+        "profession": "Engineer",
+        "image": "https://i.ibb.co/31KBCDr/nrd-Zmm-Anliy1d4-unsplash.jpg",
+        "review": "I appreciate the comprehensive orthodontic care provided by Dr. Johnson. The treatment plan was tailored to my specific needs.",
+        "rating": 4.3,
+        "date": "2023-08-30"
+      },
+      {
+        "name": "Emma Harris",
+        "profession": "Teacher",
+        "image": "https://i.ibb.co/sjT1HYr/matheus-ferrero-W7b3e-DUb-2-I-unsplash.jpg",
+        "review": "Dr. Johnson is a skilled orthodontist who prioritizes patient comfort. The results are fantastic, and the process was smooth.",
+        "rating": 4.9,
+        "date": "2023-09-20"
+      },
+      {
+        "name": "Alexander White",
+        "profession": "Writer",
+        "image": "https://i.ibb.co/vjvXJSg/vince-fleming-j3lf-Jn6deo-unsplash.jpg",
+        "review": "I'm happy with the orthodontic treatment provided by Dr. Sarah Johnson. The office is well-equipped, and the staff is friendly.",
+        "rating": 4.4,
+        "date": "2023-10-15"
+      },
+      {
+        "name": "Victoria Clark",
+        "profession": "Journalist",
+        "image": "https://i.ibb.co/LhNxBw1/andriyko-podilnyk-j-FAG-ix-Crs-M-unsplash.jpg",
+        "review": "Dr. Johnson's orthodontic expertise is commendable. The office atmosphere is pleasant, and scheduling appointments is convenient.",
+        "rating": 4.6,
+        "date": "2023-11-05"
+      },
+      {
+        "name": "Lucas Turner",
+        "profession": "Photographer",
+        "image": "https://i.ibb.co/Q84L5Nq/jonas-kakaroto-KIPqvv-TOC1s-unsplash.jpg",
+        "review": "I had a positive experience with Dr. Johnson. The orthodontic treatment was effective, and the staff was professional.",
+        "rating": 4.2,
+        "date": "2023-12-01"
+      },
+      {
+        "name": "Isabella Harris",
+        "profession": "Artist",
+        "image": "https://i.ibb.co/9cZdC1M/joel-mott-La-K153ghdig-unsplash.jpg",
+        "review": "Dr. Sarah Johnson's orthodontic skills are impressive. The results are remarkable, and the overall experience was excellent.",
+        "rating": 4.7,
+        "date": "2024-01-10"
+      },
+      {
+        "name": "Mason Turner",
+        "profession": "Student",
+        "image": "https://i.ibb.co/W2LxwN0/mark-farias-dt60oks-DTx8-unsplash.jpg",
+        "review": "I'm satisfied with the orthodontic treatment from Dr. Johnson. The office is modern, and the staff is friendly.",
+        "rating": 4.5,
+        "date": "2024-02-15"
+      },
+      {
+        "name": "Abigail White",
+        "profession": "Lawyer",
+        "image": "https://i.ibb.co/5TzmcSc/rayul-M6gy9o-Hg-II-unsplash.jpg",
+        "review": "Dr. Johnson is a skilled orthodontist who provides personalized care. The results were better than I expected.",
+        "rating": 4.8,
+        "date": "2024-03-05"
+      },
+      {
+        "name": "Christopher Clark",
+        "profession": "Chef",
+        "image": "https://i.ibb.co/p0b0Y9d/ludvig-wiese-d-Mf-HM-j-Hwc-unsplash.jpg",
+        "review": "I appreciate Dr. Sarah Johnson's attention to detail. The orthodontic treatment significantly improved my smile.",
+        "rating": 4.6,
+        "date": "2024-04-25"
+      },
+      {
+        "name": "Emily Turner",
+        "profession": "Event Planner",
+        "image": "https://i.ibb.co/vPRfFxG/ayo-ogunseinde-6-W4-F62s-N-y-I-unsplash.jpg",
+        "review": "Dr. Johnson provided excellent orthodontic care. The office is comfortable, and the staff is accommodating.",
+        "rating": 4.4,
+        "date": "2024-05-10"
+      },
+      {
+        "name": "Owen Harris",
+        "profession": "Athlete",
+        "image": "https://i.ibb.co/ngRK1xw/ali-morshedlou-WMD64t-Mfc4k-unsplash.jpg",
+        "review": "I had a positive experience with Dr. Sarah Johnson. The orthodontic treatment was effective, and the staff was professional.",
+        "rating": 4.9,
+        "date": "2024-06-20"
+      },
+      {
+        "name": "Sophie White",
+        "profession": "Designer",
+        "image": "https://i.ibb.co/7NNfScN/valentin-lacoste-gg-APxrb4-Deg-unsplash.jpg",
+        "review": "Dr. Johnson's orthodontic expertise is commendable. The results are remarkable, and the overall experience was excellent.",
+        "rating": 4.7,
+        "date": "2024-07-15"
+      },
+      {
+        "name": "Daniel Clark",
+        "profession": "Engineer",
+        "image": "https://i.ibb.co/ngRK1xw/ali-morshedlou-WMD64t-Mfc4k-unsplash.jpg",
+        "review": "I'm satisfied with the orthodontic treatment from Dr. Johnson. The office is modern, and the staff is friendly.",
+        "rating": 4.5,
+        "date": "2024-08-05"
+      }
+    ]
   },
   {
     "photo": "https://i.ibb.co/Tv5bDpb/Rectangle-15-2.png.png",
     "name": "Dr. Michael Brown, DPM",
     "credentials": "DPM, FACFAS",
     "specialization": "Podiatry",
-    "experience": "15 years",
     "education": [
       {
         "degree": "Doctor of Podiatric Medicine (DPM)",
@@ -100,6 +413,41 @@
         "school": "Foot Clinic",
         "year": "2010"
       }
+    ],
+    "experience": [
+      {
+        "institute": "City Podiatry Center",
+        "role": "Podiatrist",
+        "workingYear": "2010 - 2015"
+      },
+      {
+        "institute": "Foot Hospital",
+        "role": "Senior Podiatrist",
+        "workingYear": "2015 - Present"
+      },
+      {
+        "institute": "Village Podiatry Group",
+        "role": "Consultant Podiatrist",
+        "workingYear": "2005 - 2010"
+      },
+      {
+        "institute": "Healthy Feet Clinic",
+        "role": "Director of Podiatry",
+        "workingYear": "2013 - Present"
+      }
+    ],
+    "services": [
+      "Foot and Ankle Surgery",
+      "Sports Medicine",
+      "Orthotics",
+      "Diabetic Foot Care",
+      "Ingrown Toenail Treatment"
+    ],
+    "specializations": [
+      "Foot and Ankle Surgery",
+      "Sports Medicine",
+      "Orthotics",
+      "Diabetic Foot Care"
     ],
     "boardCertification": true,
     "areasOfInterest": ["Foot and Ankle Surgery", "Sports Medicine"],
@@ -122,7 +470,50 @@
     ],
     "appointmentScheduling": "Book appointments online or call the office.",
     "telemedicineAvailability": false,
-    "rattings": "4.7",
-    "visit": "15"
+    "ratings": "4.7",
+    "visit": "15",
+    "aboutMe": "I am a skilled and experienced podiatrist with a focus on providing exceptional care in foot and ankle health. With 15 years of dedicated practice, I have contributed significantly to the field, serving in various roles such as Senior Podiatrist and Director of Podiatry. My expertise lies in Foot and Ankle Surgery and Sports Medicine, and I am committed to ensuring the well-being of my patients through personalized and effective treatment.",
+    "reviews": [
+      {
+        "name": "Grace Miller",
+        "profession": "Teacher",
+        "image": "https://i.ibb.co/hXcQ4g1/robert-godwin-cdksy-Tq-EXzo-unsplash.jpg",
+        "review": "Dr. Michael Brown is a knowledgeable podiatrist. His treatment for my foot issue was effective, and I'm grateful for the care received.",
+        "rating": 4.5,
+        "date": "2023-01-10"
+      },
+      {
+        "name": "Andrew Turner",
+        "profession": "IT Consultant",
+        "image": "https://i.ibb.co/8PgLZW7/portrait-serious-young-businessman-glasses.jpg",
+        "review": "I had a positive experience with Dr. Brown. He explained the diagnosis clearly and provided options for treatment.",
+        "rating": 4.0,
+        "date": "2023-02-20"
+      },
+      {
+        "name": "Linda Harris",
+        "profession": "Marketing Specialist",
+        "image": "https://i.ibb.co/rssx0T3/stefan-stefancik-QXev-Dflbl8-A-unsplash.jpg",
+        "review": "Dr. Michael Brown's expertise in podiatry is commendable. The treatment plan was tailored to my needs, and the results were satisfactory.",
+        "rating": 4.8,
+        "date": "2023-03-15"
+      },
+      {
+        "name": "Timothy White",
+        "profession": "Architect",
+        "image": "https://i.ibb.co/G0YMS7Z/guy-plaid-shirt.jpg",
+        "review": "I appreciated Dr. Brown's attention to detail in addressing my foot concerns. The office staff was also friendly.",
+        "rating": 4.6,
+        "date": "2023-04-05"
+      },
+      {
+        "name": "Sophia Turner",
+        "profession": "Graphic Designer",
+        "image": "https://i.ibb.co/Gkw4W4y/almos-bechtold-3402kvt-Hh-Oo-unsplash.jpg",
+        "review": "Dr. Brown is a skilled podiatrist. The treatment process was smooth, and the follow-up care was thorough.",
+        "rating": 4.7,
+        "date": "2023-05-20"
+      }
+    ]
   }
 ]
