@@ -5,26 +5,27 @@ const styledList = css`
   color: var(--text-secodary-white);
   margin: 0 3.2rem;
   cursor: pointer;
+  text-decoration: none;
   &:hover {
-    color: var(--color-primary);
+    color: var(--text-secodary-white);
   }
 `;
 
 const activeLink = css`
-  color: var(--color-primary);
+  color: var(--bg-primary);
 `;
 
 const StyledNav = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 111;
+  z-index: 1111;
   transition: background 0.3s;
   padding: 1rem 0;
   ${(props) =>
     props.isActive &&
     css`
-      background: rgba(51, 51, 51, 0.9);
+      background: var(--bg-primary);
     `}
 `;
 
@@ -78,7 +79,16 @@ const StyledLi = styled.li`
   ${styledList};
   ${(props) => (props.isActive ? activeLink : "")}
   @media (max-width: 768px) {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.8rem;
+  }
+  a {
+    ${styledList};
+  }
+
+  .active {
+    background-color: var(--bg-button);
+    width: 100%;
+    padding: 1.3rem 2rem;
   }
 `;
 
@@ -112,10 +122,15 @@ const IconContainer = styled.span`
   justify-content: center;
   gap: 10px;
   font-size: var(--font-icon);
+  svg {
+    color: var(--text-white);
+  }
 `;
 
 const DocTitle = styled.span`
   color: var(--text-secodary-white);
+  font-size: var(--font-logo-title);
+  font-weight: 700;
   span {
     color: var(--bg-button);
   }

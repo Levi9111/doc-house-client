@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
 :root{
     --font-icon: 3.5rem;
+    --font-logo-title: var(--font-icon);
     --font-primary: 6.5rem;
     --font-secondary: 1.8rem;
     --font-tertiary: 1.6rem;
@@ -55,6 +56,7 @@ body {
 
 @media (max-width: 768px) {
   :root {
+    --font-logo-title: 2rem;
     --font-primary: 3rem;
     --font-tertiary: 1.4rem;
     --banner-font: 1.4rem;

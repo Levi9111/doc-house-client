@@ -15,7 +15,7 @@ import DocIcon from "../../../assets/icons/DocIcon";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const [currentSection, setCurrentSection] = useState(""); // Track the current section
+  const [currentSection, setCurrentSection] = useState("/"); // Track the current section
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,7 +64,6 @@ function FixedNav({
 }) {
   return (
     <NavFixed isActive={scrolled}>
-      {/* <Img src={logo} alt="Logo" onClick={scrollToTop} /> */}
       <IconContainer onClick={scrollToTop}>
         <DocIcon />
         <DocTitle>
@@ -88,15 +87,15 @@ function ResponsiveNav({
   const [active, setActive] = useState(false);
 
   const NavResponsiveElements = styled.div`
-    background: var(--banner-secondary);
+    background: var(--bg-primary);
     width: 100%;
     position: absolute;
     ${active
       ? css`
-          top: 150%;
+          top: 10rem;
         `
       : css`
-          top: -250%;
+          top: -25rem;
         `}
     left: 50%;
     transform: translate(-50%, -50%);
@@ -104,8 +103,8 @@ function ResponsiveNav({
     flex-direction: column;
     align-items: center;
     color: var(--color-white);
-    padding: 4rem 0;
-    transition: top 0.4s;
+    padding: 5.2rem 0 0 0;
+    transition: all 0.4s;
   `;
 
   function handleActive() {
