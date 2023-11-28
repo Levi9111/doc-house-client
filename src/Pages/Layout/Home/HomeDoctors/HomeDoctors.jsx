@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-import ReactStars from "react-rating-stars-component";
 import { fetchDoctors } from "../../../../FetchData/fetchData";
 import Spinner from "../../../../Components/Spinner";
 import LocationIcon from "../../../../assets/icons/LocationIcon";
@@ -13,6 +12,7 @@ import {
   Doctors,
   Doctor,
 } from "../HomeStyles";
+import ReactStarsIcon from "../../../../Components/ReactStars";
 
 function HomeDoctors() {
   const {
@@ -47,15 +47,7 @@ function HomeDoctors() {
 }
 
 function DoctorInfo({ doctor }) {
-  const iconStyles = {
-    size: 50,
-    value: doctor.rattings,
-    edit: false,
-    a11y: true,
-    isHalf: true,
-    activeColor: "#F2871D",
-  };
-
+  const { reviews } = doctor;
   return (
     <Doctor>
       <img src={doctor.photo} alt={doctor.name} />
@@ -64,7 +56,7 @@ function DoctorInfo({ doctor }) {
         {doctor.credentials}-{doctor.specialization}
       </p>
       <aside>
-        <ReactStars {...iconStyles} />
+        <ReactStarsIcon reviews={reviews} />
       </aside>
       <span>
         <LocationIcon />
