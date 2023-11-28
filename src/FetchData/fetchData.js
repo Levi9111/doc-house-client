@@ -17,3 +17,13 @@ export const fetchDoctors = async () => {
     throw new Error("Error fetching Doctors");
   }
 };
+
+export const fetchSingleDoctor = async ({ params }) => {
+  try {
+    const response = await fetch(`http://localhost:3000/doctors/${params.id}`);
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    throw new Error("Error fetching Doctors");
+  }
+};

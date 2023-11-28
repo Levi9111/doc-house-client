@@ -31,6 +31,8 @@ export const GlobalStyles = createGlobalStyle`
     --controlled-padding:0 0 13rem 0;
     --secondary-controlled-padding: 13rem 0;
     --border-radius: 1rem;
+
+    --card-shadow:1px 0px 31px -1px rgba(0,0,0,0.63);;
     
 
 }

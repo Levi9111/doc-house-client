@@ -1,11 +1,14 @@
 import styled from "styled-components";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
-import { createContext } from "react";
+import { useContext } from "react";
 import TabPanel1 from "./TablePanel1";
 import Banner from "../../../../Components/Banner";
 import LocationIcon from "../../../../assets/icons/LocationIcon";
 import ReactStarsIcon from "../../../../Components/ReactStars";
+import { doctorInfoContext } from "./DoctorContext";
+import TabPanel2 from "./TabPanel2";
+import TabPanel3 from "./TabPanel3";
 
 const StyledDoctorProfile = styled.div`
   background-color: #f3f3f3;
@@ -56,6 +59,8 @@ const DoctorInfo = styled.div`
   .react-tabs {
   }
 
+  .react-tabs__tab-panel--selected {
+  }
   .react-tabs__tab-list {
     border: 0;
     margin: 0;
@@ -141,9 +146,6 @@ const DoctorInfo = styled.div`
       }
     }
   }
-
-  .react-tabs__tab-panel--selected {
-  }
 `;
 const Location = styled.span`
   display: flex;
@@ -159,108 +161,67 @@ const Location = styled.span`
   }
 `;
 
-export const doctorInfoContext = createContext();
-
 function DoctorProfile() {
-  const doctorInfo = useLoaderData();
+  const infoContext = useContext(doctorInfoContext);
 
   const {
     photo,
     name,
     credentials,
     specialization,
-    education,
-    experience,
-    boardCertification,
-    areasOfInterest,
-    hospitalAffiliations,
-    languagesSpoken,
-    professionalMemberships,
-    services,
-    specializations,
-    contactInformation,
-    officeHours,
-    insuranceAccepted,
-    publications,
-    appointmentScheduling,
-    telemedicineAvailability,
-    rattings,
-    visit,
-    aboutMe,
     reviews,
-  } = doctorInfo;
-
-  const infoContext = {
-    photo,
-    name,
-    credentials,
-    specialization,
-    education,
-    experience,
-    boardCertification,
-    areasOfInterest,
-    hospitalAffiliations,
-    languagesSpoken,
-    professionalMemberships,
-    services,
-    specializations,
     contactInformation,
-    officeHours,
-    insuranceAccepted,
-    publications,
-    appointmentScheduling,
-    telemedicineAvailability,
-    rattings,
-    visit,
-    aboutMe,
-    reviews,
-  };
+  } = infoContext;
 
   return (
-    <doctorInfoContext.Provider value={infoContext}>
-      <StyledDoctorProfile>
-        <Banner title="Home / Doctor Profile" header="Doctor Profile" />
-        <aside>
-          <DoctorImgContainer>
-            <img src={photo} alt="" />
-            <span>
-              <h3>{name}</h3>
+    <StyledDoctorProfile>
+      <Banner title="Home / Doctor Profile" header="Doctor Profile" />
+      <aside>
+        <DoctorImgContainer>
+          <img src={photo} alt="" />
+          <span>
+            <h3>{name}</h3>
+            <p>
+              {credentials}-{specialization}
+            </p>
+            <div>
+              <ReactStarsIcon reviews={reviews} />
+              <p>({reviews.length})</p>
+            </div>
+            <Location>
+              <LocationIcon />
               <p>
-                {credentials}-{specialization}
+                {contactInformation.officeAddress} -{""}
+                <Link to="">Get Directions</Link>
               </p>
-              <div>
-                <ReactStarsIcon reviews={reviews} />
-                <p>({reviews.length})</p>
-              </div>
-              <Location>
-                <LocationIcon />
-                <p>
-                  {contactInformation.officeAddress} -{""}
-                  <Link to="">Get Directions</Link>
-                </p>
-              </Location>
-            </span>
-          </DoctorImgContainer>
-          <DoctorInfo>
-            <Tabs>
-              <TabList>
-                <Tab>Overview</Tab>
-                <Tab>Location</Tab>
-                <Tab>Reviews</Tab>
-                <Tab>Business Hour</Tab>
-              </TabList>
+            </Location>
+          </span>
+        </DoctorImgContainer>
+        <DoctorInfo>
+          <Tabs>
+            <TabList>
+              <Tab>Overview</Tab>
+              <Tab>Location</Tab>
+              <Tab>Reviews</Tab>
+              <Tab>Business Hour</Tab>
+            </TabList>
 
-              <TabPanel>
-                <TabPanel1 />
-              </TabPanel>
-              <TabPanel>
-                <h2>Any content 2</h2>
-              </TabPanel>
-            </Tabs>
-          </DoctorInfo>
-        </aside>
-      </StyledDoctorProfile>
-    </doctorInfoContext.Provider>
+            <TabPanel>
+              <TabPanel1 />
+            </TabPanel>
+            <TabPanel>
+              <TabPanel2 />
+            </TabPanel>
+            <TabPanel>
+              <TabPanel3 />
+            </TabPanel>
+            <TabPanel>
+              <TabPanel2 />
+            </TabPanel>
+          </Tabs>
+        </DoctorInfo>
+      </aside>
+    </StyledDoctorProfile>
   );
 }
 

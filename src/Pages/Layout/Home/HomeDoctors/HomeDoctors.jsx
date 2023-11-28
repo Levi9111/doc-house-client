@@ -20,7 +20,7 @@ function HomeDoctors() {
     data: doctors,
     error,
   } = useQuery({
-    queryKey: "doctors",
+    queryKey: ["doctors"],
     queryFn: fetchDoctors,
   });
 

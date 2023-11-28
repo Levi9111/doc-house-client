@@ -7,6 +7,7 @@ import Login from "../Pages/Layout/LogIn/Login";
 import SignUp from "../Pages/Layout/SignUp/SignUp";
 import ElectroGastrologyTherapy from "../Pages/Layout/Home/TabsPages/ElectroGastrologyTherapy/ElectroGastrologyTherapy";
 import CosmeticDentistry from "../Pages/Layout/Home/TabsPages/CosmeticDentistry/CosmeticDentistry";
+import DoctorContext from "../Pages/Layout/Home/HomeDoctors/DoctorContext";
 import DoctorProfile from "../Pages/Layout/Home/HomeDoctors/DoctorProfile";
 
 export const router = createBrowserRouter([
@@ -44,7 +45,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/:id",
-        element: <DoctorProfile />,
+        element: (
+          <DoctorContext>
+            <DoctorProfile />
+          </DoctorContext>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:3000/doctors/${params.id}`),
       },

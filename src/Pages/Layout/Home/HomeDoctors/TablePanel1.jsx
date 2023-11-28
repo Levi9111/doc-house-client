@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { doctorInfoContext } from "./DoctorProfile";
+import { doctorInfoContext } from "./DoctorContext";
 import styled from "styled-components";
 
 const Visit = styled.div`
