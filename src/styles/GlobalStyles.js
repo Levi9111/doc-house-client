@@ -68,5 +68,4 @@ body {
     --controlled-padding:0 0 3.2rem 0;
   }
 }
-
 `;
