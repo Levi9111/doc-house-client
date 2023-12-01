@@ -16,6 +16,14 @@ const StyledProfileReviews = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
+
+    //TODO: make uneven grid layout
+    > div {
+      &:first-child {
+      }
+      &:nth-child(2) {
+      }
+    }
   }
 `;
 

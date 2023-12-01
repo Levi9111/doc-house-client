@@ -1,26 +1,26 @@
 import { useQuery } from "@tanstack/react-query";
 import { createContext } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
-import { fetchSingleDoctor } from "../../../../FetchData/fetchData";
+import { useParams } from "react-router-dom";
+import { fetchDoctors } from "../../../../FetchData/fetchData";
+import Spinner from "../../../../Components/Spinner";
 
 export const doctorInfoContext = createContext();
 
 function DoctorContext({ children }) {
-  const doctorInfo = useLoaderData();
   const { id } = useParams();
 
-  // TODO: replace useLoaderData with react query
+  const {
+    isLoading,
+    data: doctorsInfo,
+    error,
+  } = useQuery({
+    queryKey: ["doctorsInfo"],
+    queryFn: fetchDoctors,
+  });
 
-  //   const {
-  //     isLoading,
-  //     data: singleDoctorInfo,
-  //     error,
-  //   } = useQuery({
-  //     queryKey: ["singleDoctor", { id }],
-  //     queryFn: fetchSingleDoctor,
-  //   });
+  if (isLoading) return <Spinner />;
 
-  //   console.log(singleDoctorInfo);
+  const doctorInfo = doctorsInfo.find((doctor) => doctor._id === id);
 
   const {
     photo,

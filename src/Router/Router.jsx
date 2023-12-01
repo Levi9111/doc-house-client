@@ -50,8 +50,6 @@ export const router = createBrowserRouter([
             <DoctorProfile />
           </DoctorContext>
         ),
-        loader: ({ params }) =>
-          fetch(`http://localhost:3000/doctors/${params.id}`),
       },
     ],
   },

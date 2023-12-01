@@ -163,7 +163,6 @@ const Location = styled.span`
 
 function DoctorProfile() {
   const infoContext = useContext(doctorInfoContext);
-
   const {
     photo,
     name,
