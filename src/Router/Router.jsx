@@ -3,12 +3,12 @@ import Main from "../Main/Main";
 import Home from "../Pages/Layout/Home/Home/Home";
 import About from "../Pages/Layout/About/About";
 import Appointment from "../Pages/Layout/Appointment/Appointment";
-import Login from "../Pages/Layout/LogIn/Login";
 import SignUp from "../Pages/Layout/SignUp/SignUp";
 import ElectroGastrologyTherapy from "../Pages/Layout/Home/TabsPages/ElectroGastrologyTherapy/ElectroGastrologyTherapy";
 import CosmeticDentistry from "../Pages/Layout/Home/TabsPages/CosmeticDentistry/CosmeticDentistry";
 import DoctorContext from "../Pages/Layout/Home/HomeDoctors/DoctorContext";
 import DoctorProfile from "../Pages/Layout/Home/HomeDoctors/DoctorProfile";
+import Login from "../Pages/Layout/Login/Login";
 
 export const router = createBrowserRouter([
   {
